@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jindal Naturecure Institute</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: #0f2419;
+    color: #fdfaf6;
+    overflow-x: hidden;
+  }
+
+  /* ── VIDEO BANNER ──────────────────────────── */
+  .video-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    overflow: hidden;
+  }
+
+  .video-banner__video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .video-banner__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video-banner__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      135deg,
+      rgba(15, 36, 25, 0.7) 0%,
+      rgba(27, 61, 42, 0.45) 50%,
+      rgba(15, 36, 25, 0.65) 100%
+    );
+    z-index: 2;
+  }
+
+  /* ── TEXT ON TOP ────────────────────────────── */
+  .video-banner__content {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 60px 80px;
+  }
+
+  /* ── LEFT SIDE ─────────────────────────────── */
+  .video-banner__side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .video-banner__header {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3.8vw, 3.4rem);
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fdfaf6;
+    letter-spacing: -0.01em;
+    margin-bottom: 18px;
+  }
+
+  .video-banner__divider {
+    width: 50px;
+    height: 2px;
+    background: #c4a265;
+    margin-bottom: 18px;
+  }
+
+  .video-banner__subtext {
+    font-family: 'Jost', sans-serif;
+    font-size: clamp(0.85rem, 1.2vw, 1.1rem);
+    font-weight: 300;
+    color: #a8c9a0;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    line-height: 1.6;
+  }
+
+  /* ── RIGHT SIDE — NOT DONE ─────────────────── */
+  .video-banner__headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.5rem, 7.5vw, 7rem);
+    font-weight: 700;
+    line-height: 0.95;
+    text-align: right;
+    color: #fdfaf6;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+  }
+
+  /* ── RESPONSIVE ────────────────────────────── */
+  @media (max-width: 768px) {
+    .video-banner__content {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 28px;
+      gap: 40px;
+    }
+
+    .video-banner__headline {
+      text-align: left;
+    }
+  }
+</style>
+</head>
+<body>
+
+<section class="video-banner">
+
+  <!-- Video Background -->
+  <div class="video-banner__video-wrap">
+    <video class="video-banner__video" autoplay muted loop playsinline>
+      <source src="banner.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="video-banner__overlay"></div>
+
+  <!-- Text on Top -->
+  <div class="video-banner__content">
+
+    <div class="video-banner__side">
+      <h1 class="video-banner__header">Jindal Naturecure Institute</h1>
+      <div class="video-banner__divider"></div>
+      <p class="video-banner__subtext">Healing in the Lap of Nature</p>
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+</body>
+</html>

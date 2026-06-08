@@ -368,7 +368,7 @@
 
     /* Green Metrics Section */
     .metrics-section {
-      background-color: #003505;
+      background-color: #02240b;
     }
 
     .metrics-label {
@@ -1260,7 +1260,7 @@
       border: 1px solid rgba(255, 255, 255, 0.35);
       border-radius: 2.5rem !important;
       width: 100%;
-      padding: 18px 22px;
+      padding: 12px 16px;
       max-width: 760px;
     }
 
@@ -1281,7 +1281,7 @@
     .testimonial-section h2 {
       font-size: 2.1rem;
       margin-bottom: 1.5rem;
-          color: #061B0E !important;
+      color: #061B0E !important;
     }
 
     .testimonial-section .font-body-lg {
@@ -1564,7 +1564,7 @@
     .core-node {
       width: 11rem;
       height: 11rem;
-      background: #003505;
+      background: #02240b;
       border-radius: 50%;
       display: flex;
       flex-direction: column;
@@ -1626,6 +1626,7 @@
       border-color: #d0e9d4;
       color: #003505;
     }
+
     .node-top-left {
       top: 12%;
       left: 12%;
@@ -1707,7 +1708,7 @@
 
     /* Footer */
     .footer {
-      background-color: #003505;
+      background-color: #02240b;
       color: #fff;
       padding: 100px 0 50px;
     }
@@ -2403,7 +2404,7 @@
 
     section.New_quote_section {
       padding: 50px 0;
-      background: #003505;
+      background: #02240b;
     }
 
     @keyframes float {
@@ -2777,11 +2778,11 @@
       }
 
       .md\:p-16 {
-        padding: 4rem;
+        padding: 2rem;
       }
 
       .glass-card {
-        padding: 4rem;
+        padding: 2rem;
       }
 
       .md\:text-headline-lg {
@@ -3864,16 +3865,16 @@
       margin: 0;
       font-weight: 700;
       color: var(--primary);
-          text-align: center;
+      text-align: center;
     }
 
 
 
-.commitment__showcase {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: 1fr 1fr;
-}
+    .commitment__showcase {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: 1fr 1fr;
+    }
 
     .commitment__radio {
       position: absolute;
@@ -3881,12 +3882,13 @@
       pointer-events: none;
     }
 
-.commitment__menu {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-}
+    .commitment__menu {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+    }
+
     .commitment__tab {
       display: flex;
       align-items: center;
@@ -3955,10 +3957,10 @@
     }
 
     .commitment__panel.active,
-    #commit-1:checked ~ .commitment__stage .commitment__panel--1,
-    #commit-2:checked ~ .commitment__stage .commitment__panel--2,
-    #commit-3:checked ~ .commitment__stage .commitment__panel--3,
-    #commit-4:checked ~ .commitment__stage .commitment__panel--4 {
+    #commit-1:checked~.commitment__stage .commitment__panel--1,
+    #commit-2:checked~.commitment__stage .commitment__panel--2,
+    #commit-3:checked~.commitment__stage .commitment__panel--3,
+    #commit-4:checked~.commitment__stage .commitment__panel--4 {
       opacity: 1;
       transform: translateY(0);
       pointer-events: auto;
@@ -3977,7 +3979,7 @@
       left: 0;
       right: 0;
       padding: 1.5rem;
-      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.62) 100%);
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.62) 100%);
       color: #fff;
     }
 
@@ -3988,10 +3990,10 @@
       font-weight: 700;
     }
 
-    #commit-1:checked ~ .commitment__menu .commitment__tab--1,
-    #commit-2:checked ~ .commitment__menu .commitment__tab--2,
-    #commit-3:checked ~ .commitment__menu .commitment__tab--3,
-    #commit-4:checked ~ .commitment__menu .commitment__tab--4 {
+    #commit-1:checked~.commitment__menu .commitment__tab--1,
+    #commit-2:checked~.commitment__menu .commitment__tab--2,
+    #commit-3:checked~.commitment__menu .commitment__tab--3,
+    #commit-4:checked~.commitment__menu .commitment__tab--4 {
       background: var(--primary-container);
       border-color: var(--secondary);
     }
@@ -4010,7 +4012,8 @@
     /* Smooth, header-aware scrolling */
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 72px;            /* sticky header height */
+      scroll-padding-top: 72px;
+      /* sticky header height */
     }
 
     /* A tasteful scroll cue pinned to the hero */
@@ -4031,6 +4034,7 @@
       text-transform: uppercase;
       text-decoration: none;
     }
+
     .scroll-cue .cue-dot {
       width: 24px;
       height: 40px;
@@ -4038,6 +4042,7 @@
       border-radius: 20px;
       position: relative;
     }
+
     .scroll-cue .cue-dot::before {
       content: '';
       position: absolute;
@@ -4050,20 +4055,35 @@
       transform: translateX(-50%);
       animation: cueScroll 1.8s ease-in-out infinite;
     }
+
     @keyframes cueScroll {
-      0%   { opacity: 0; transform: translate(-50%, 0); }
-      30%  { opacity: 1; }
-      60%  { opacity: 1; transform: translate(-50%, 14px); }
-      100% { opacity: 0; transform: translate(-50%, 14px); }
+      0% {
+        opacity: 0;
+        transform: translate(-50%, 0);
+      }
+
+      30% {
+        opacity: 1;
+      }
+
+      60% {
+        opacity: 1;
+        transform: translate(-50%, 14px);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translate(-50%, 14px);
+      }
     }
 
     /* ---- TABLET / DESKTOP: every block fills one screen and ----
        ---- vertically centres its own content                 ---- */
     @media screen and (min-width: 769px) {
+
       .campus-section,
       .metrics-section,
-      .commitment,
-      .cta-section {
+      .commitment {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -4071,43 +4091,35 @@
         padding-top: 48px;
         padding-bottom: 48px;
       }
+
       .feature-section,
-      .green-campus-section,
-      .testimonial-section {
+      .green-campus-section {
         min-height: 100vh;
       }
-      .green-campus-section { justify-content: center; }
+
+      .green-campus-section {
+        justify-content: center;
+      }
 
       /* let inner wrappers use the full width when the section is a flex column */
-      .campus-section > .container,
-      .metrics-section > .container,
-      .commitment > .commitment__container,
-      .cta-section > .container {
+      .campus-section>.container,
+      .metrics-section>.container,
+      .commitment>.commitment__container,
+      .cta-section>.container {
         width: 100%;
       }
-
-      /* gentle, non-trapping snap so each section settles into view */
-      .hero-section,
-      .campus-section,
-      .feature-section,
-      .metrics-section,
-      .green-campus-section,
-      .New_quote_section,
-      .commitment,
-      .testimonial-section,
-      .cta-section {
-        scroll-snap-align: start;
-      }
-    }
-
-    @media screen and (min-width: 1024px) {
-      html { scroll-snap-type: y proximity; }
     }
 
     /* ---- MOBILE: keep everything readable, no cramming ---- */
     @media screen and (max-width: 768px) {
-      html { scroll-snap-type: none; scroll-padding-top: 60px; }
-      .hero-section { min-height: 78vh; min-height: 78svh; }
+      html {
+        scroll-padding-top: 60px;
+      }
+
+      .hero-section {
+        min-height: 78vh;
+        min-height: 78svh;
+      }
     }
 
     /* ============================================================ */
@@ -4117,34 +4129,65 @@
     /* Commitment showcase used 2 columns at every size – stack it
        below 900px so the menu and image no longer get squashed.    */
     @media screen and (max-width: 900px) {
-      .commitment__showcase { grid-template-columns: 1fr; }
-      .commitment__stage   { min-height: 22rem; }
-      .commitment__menu    { flex-direction: row; flex-wrap: wrap; }
-      .commitment__tab     { flex: 1 1 calc(50% - 5px); }
+      .commitment__showcase {
+        grid-template-columns: 1fr;
+      }
+
+      .commitment__stage {
+        min-height: 22rem;
+      }
+
+      .commitment__menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .commitment__tab {
+        flex: 1 1 calc(50% - 5px);
+      }
     }
+
     @media screen and (max-width: 520px) {
-      .commitment__tab     { flex: 1 1 100%; }
+      .commitment__tab {
+        flex: 1 1 100%;
+      }
     }
 
     /* Feature gallery: even, predictable columns instead of ragged wrap */
     @media screen and (min-width: 1024px) {
-      .feature-gallery { grid-template-columns: repeat(5, 1fr); }
+      .feature-gallery {
+        grid-template-columns: repeat(5, 1fr);
+      }
     }
+
     @media screen and (min-width: 769px) and (max-width: 1023px) {
-      .feature-gallery { grid-template-columns: repeat(3, 1fr); }
+      .feature-gallery {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
+
     @media screen and (max-width: 768px) {
-      .feature-gallery { grid-template-columns: repeat(2, 1fr); }
+      .feature-gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     /* Metrics read better as a 2x2 block on phones */
     @media screen and (max-width: 768px) {
-      .metrics-grid { grid-template-columns: repeat(2, 1fr); }
-      .metric-card  { padding: 2.25rem 1.25rem; }
+      .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .metric-card {
+        padding: 2.25rem 1.25rem;
+      }
     }
 
     /* Quote section as a centred, constrained statement */
-    .New_quote_section { text-align: center; }
+    .New_quote_section {
+      text-align: center;
+    }
+
     .New_quote_section p {
 
       margin: 0 auto;
@@ -4153,8 +4196,16 @@
     }
 
     /* Belt-and-braces: nothing should ever cause sideways scroll */
-    img, video, svg { max-width: 100%; }
-    .container, .commitment__container { width: 100%; }
+    img,
+    video,
+    svg {
+      max-width: 100%;
+    }
+
+    .container,
+    .commitment__container {
+      width: 100%;
+    }
 
     /* ============================================================ */
     /*  REFINED MOTION  (disabled for reduced-motion users)         */
@@ -4163,9 +4214,17 @@
       .metric-card.in-view .metric-icon {
         animation: floatY 5s ease-in-out infinite;
       }
+
       @keyframes floatY {
-        0%, 100% { transform: translateY(0); }
-        50%      { transform: translateY(-8px); }
+
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-8px);
+        }
       }
     }
 
@@ -4192,7 +4251,6 @@
 
     .metric-card:hover {
       background-color: #f7f8e8;
-      box-shadow: inset 0 0 0 1px rgba(22, 56, 38, 0.18);
     }
 
     .metric-card:hover .metric-icon,
@@ -4262,119 +4320,116 @@
       color: #ffffff !important;
       transform: translateY(-2px);
     }
-    
-  /* ── VIDEO BANNER ──────────────────────────── */
-  .video-banner {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    min-height: 500px;
-    overflow: hidden;
-  }
 
-  .video-banner__video-wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
+    /* ── VIDEO BANNER ──────────────────────────── */
+    .video-banner {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      min-height: 500px;
+      overflow: hidden;
+    }
 
-  .video-banner__video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    .video-banner__video-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
 
-  .video-banner__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      135deg,
-      rgba(15, 36, 25, 0.7) 0%,
-      rgba(27, 61, 42, 0.45) 50%,
-      rgba(15, 36, 25, 0.65) 100%
-    );
-    z-index: 2;
-  }
+    .video-banner__video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-  /* ── TEXT ON TOP ────────────────────────────── */
-  .video-banner__content {
-    position: relative;
-    z-index: 5;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    padding: 60px 80px;
-  }
+    .video-banner__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg,
+          rgba(15, 36, 25, 0.7) 0%,
+          rgba(27, 61, 42, 0.45) 50%,
+          rgba(15, 36, 25, 0.65) 100%);
+      z-index: 2;
+    }
 
-  /* ── LEFT SIDE ─────────────────────────────── */
-  .video-banner__side {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .video-banner__header {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2rem, 3.8vw, 3.4rem);
-    font-weight: 400;
-    line-height: 1.2;
-    color: #fdfaf6;
-    letter-spacing: -0.01em;
-    margin-bottom: 18px;
-  }
-
-  .video-banner__divider {
-    width: 50px;
-    height: 2px;
-    background: #c4a265;
-    margin-bottom: 18px;
-  }
-
-  .video-banner__subtext {
-    font-family: 'Jost', sans-serif;
-    font-size: clamp(0.85rem, 1.2vw, 1.1rem);
-    font-weight: 300;
-    color: #a8c9a0;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    line-height: 1.6;
-  }
-
-  /* ── RIGHT SIDE — NOT DONE ─────────────────── */
-  .video-banner__headline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(3.5rem, 7.5vw, 7rem);
-    font-weight: 700;
-    line-height: 0.95;
-    text-align: right;
-    color: #fdfaf6;
-    text-transform: uppercase;
-    letter-spacing: -0.02em;
-  }
-
-  /* ── RESPONSIVE ────────────────────────────── */
-  @media (max-width: 768px) {
+    /* ── TEXT ON TOP ────────────────────────────── */
     .video-banner__content {
+      position: relative;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      padding: 60px 80px;
+    }
+
+    /* ── LEFT SIDE ─────────────────────────────── */
+    .video-banner__side {
+      display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      padding: 40px 28px;
-      gap: 40px;
     }
 
+    .video-banner__header {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: #fdfaf6;
+      letter-spacing: -0.01em;
+      margin-bottom: 18px;
+    }
+
+    .video-banner__divider {
+      width: 50px;
+      height: 2px;
+      background: #c4a265;
+      margin-bottom: 18px;
+    }
+
+    .video-banner__subtext {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1rem, 1.5vw, 1.3rem);
+      font-weight: 500;
+      color: #fdfaf6;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      line-height: 1.6;
+    }
+
+    /* ── RIGHT SIDE — NOT DONE ─────────────────── */
     .video-banner__headline {
-      text-align: left;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.5rem, 7.5vw, 7rem);
+      font-weight: 700;
+      line-height: 0.95;
+      text-align: right;
+      color: #fdfaf6;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
     }
-  }
 
+    /* ── RESPONSIVE ────────────────────────────── */
+    @media (max-width: 768px) {
+      .video-banner__content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px 28px;
+        gap: 40px;
+      }
+
+      .video-banner__headline {
+        text-align: left;
+      }
+    }
   </style>
 
 </head>
@@ -4495,29 +4550,29 @@
 
   <!-- ================= LEFT MENU END ================= -->
 
-<section class="video-banner">
+  <section class="video-banner">
 
-  <!-- Video Background -->
-  <div class="video-banner__video-wrap">
-    <video class="video-banner__video" autoplay muted loop playsinline>
-      <source src="banner.mp4" type="video/mp4">
-    </video>
-  </div>
-  <div class="video-banner__overlay"></div>
+    <!-- Video Background -->
+    <div class="video-banner__video-wrap">
+      <video class="video-banner__video" autoplay muted loop playsinline>
+        <source src="banner.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video-banner__overlay"></div>
 
-  <!-- Text on Top -->
-  <div class="video-banner__content">
+    <!-- Text on Top -->
+    <div class="video-banner__content">
 
-    <div class="video-banner__side">
-      <h1 class="video-banner__header">Jindal Naturecure Institute</h1>
-      <div class="video-banner__divider"></div>
-      <p class="video-banner__subtext">Healing in the Lap of Nature</p>
+      <div class="video-banner__side">
+        <h1 class="video-banner__header">Jindal Naturecure Institute</h1>
+        <div class="video-banner__divider"></div>
+        <p class="video-banner__subtext">Healing in the Lap of Nature</p>
+      </div>
+
+
     </div>
 
-
-  </div>
-
-</section>
+  </section>
 
   <section class="campus-section" id="about">
     <div class="container">
@@ -4712,7 +4767,7 @@
   </section>
 
   <section class="commitment">
-  <div class="commitment__container">
+    <div class="commitment__container">
 
 
       <p class="commitment__eyebrow">
@@ -4723,74 +4778,74 @@
         Harmony with Nature
       </h2>
 
-  
 
-    <div class="commitment__showcase">
 
-      <!-- Selection state (one set of radios drives the whole showcase) -->
-      <input type="radio" name="commitment-tab" id="commit-1" class="commitment__radio" checked>
-      <input type="radio" name="commitment-tab" id="commit-2" class="commitment__radio">
-      <input type="radio" name="commitment-tab" id="commit-3" class="commitment__radio">
-      <input type="radio" name="commitment-tab" id="commit-4" class="commitment__radio">
+      <div class="commitment__showcase">
 
-      <!-- Selectable menu -->
-      <div class="commitment__menu">
-        <label class="commitment__tab commitment__tab--1" for="commit-1">
-          <span class="commitment__tab-number">01</span>
-          <span class="commitment__tab-name">Water Conservation</span>
-        </label>
-        <label class="commitment__tab commitment__tab--2" for="commit-2">
-          <span class="commitment__tab-number">02</span>
-          <span class="commitment__tab-name">Natural Waste Management</span>
-        </label>
-        <label class="commitment__tab commitment__tab--3" for="commit-3">
-          <span class="commitment__tab-number">03</span>
-          <span class="commitment__tab-name">Organic Farming</span>
-        </label>
-        <label class="commitment__tab commitment__tab--4" for="commit-4">
-          <span class="commitment__tab-number">04</span>
-          <span class="commitment__tab-name">Eco-Friendly Operations</span>
-        </label>
+        <!-- Selection state (one set of radios drives the whole showcase) -->
+        <input type="radio" name="commitment-tab" id="commit-1" class="commitment__radio" checked>
+        <input type="radio" name="commitment-tab" id="commit-2" class="commitment__radio">
+        <input type="radio" name="commitment-tab" id="commit-3" class="commitment__radio">
+        <input type="radio" name="commitment-tab" id="commit-4" class="commitment__radio">
+
+        <!-- Selectable menu -->
+        <div class="commitment__menu">
+          <label class="commitment__tab commitment__tab--1" for="commit-1">
+            <span class="commitment__tab-number">01</span>
+            <span class="commitment__tab-name">Water Conservation</span>
+          </label>
+          <label class="commitment__tab commitment__tab--2" for="commit-2">
+            <span class="commitment__tab-number">02</span>
+            <span class="commitment__tab-name">Natural Waste Management</span>
+          </label>
+          <label class="commitment__tab commitment__tab--3" for="commit-3">
+            <span class="commitment__tab-number">03</span>
+            <span class="commitment__tab-name">Organic Farming</span>
+          </label>
+          <label class="commitment__tab commitment__tab--4" for="commit-4">
+            <span class="commitment__tab-number">04</span>
+            <span class="commitment__tab-name">Eco-Friendly Operations</span>
+          </label>
+        </div>
+
+        <!-- Stage: the large image + caption that swaps with selection -->
+        <div class="commitment__stage">
+          <figure class="commitment__panel commitment__panel--1">
+            <img class="commitment__image" src="./water.png" alt="Flowing fresh water">
+            <figcaption class="commitment__caption">
+              <h3 class="commitment__caption-title">Water Conservation</h3>
+
+            </figcaption>
+          </figure>
+
+          <figure class="commitment__panel commitment__panel--2">
+            <img class="commitment__image" src="./waste.png" alt="Composting natural matter">
+            <figcaption class="commitment__caption">
+              <h3 class="commitment__caption-title">Natural Waste Management</h3>
+
+            </figcaption>
+          </figure>
+
+          <figure class="commitment__panel commitment__panel--3">
+            <img class="commitment__image" src="./farming.png" alt="Organic crops in a field">
+            <figcaption class="commitment__caption">
+              <h3 class="commitment__caption-title">Organic Farming</h3>
+
+            </figcaption>
+          </figure>
+
+          <figure class="commitment__panel commitment__panel--4">
+            <img class="commitment__image" src="./operation.png" alt="Clean renewable energy">
+            <figcaption class="commitment__caption">
+              <h3 class="commitment__caption-title">Eco-Friendly Operations</h3>
+
+            </figcaption>
+          </figure>
+        </div>
+
       </div>
-
-      <!-- Stage: the large image + caption that swaps with selection -->
-      <div class="commitment__stage">
-        <figure class="commitment__panel commitment__panel--1">
-          <img class="commitment__image" src="./water.png" alt="Flowing fresh water">
-          <figcaption class="commitment__caption">
-            <h3 class="commitment__caption-title">Water Conservation</h3>
-
-          </figcaption>
-        </figure>
-
-        <figure class="commitment__panel commitment__panel--2">
-          <img class="commitment__image" src="./waste.png" alt="Composting natural matter">
-          <figcaption class="commitment__caption">
-            <h3 class="commitment__caption-title">Natural Waste Management</h3>
-         
-          </figcaption>
-        </figure>
-
-        <figure class="commitment__panel commitment__panel--3">
-          <img class="commitment__image" src="./farming.png" alt="Organic crops in a field">
-          <figcaption class="commitment__caption">
-            <h3 class="commitment__caption-title">Organic Farming</h3>
-        
-          </figcaption>
-        </figure>
-
-        <figure class="commitment__panel commitment__panel--4">
-          <img class="commitment__image" src="./operation.png" alt="Clean renewable energy">
-          <figcaption class="commitment__caption">
-            <h3 class="commitment__caption-title">Eco-Friendly Operations</h3>
-
-          </figcaption>
-        </figure>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
   <!-- Testimonials Section -->
 
   <section
@@ -4805,10 +4860,10 @@
     </div>
     <!-- Content Container -->
     <div
-      class="relative z-10 w-full max-w-container-max px-margin-mobile md:px-margin-desktop py-16 flex flex-col items-center text-center">
+      class="relative z-10 w-full max-w-container-max px-margin-mobile md:px-margin-desktop py-8 flex flex-col items-center text-center">
       <h2
-        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-surface mb-12 max-w-2xl leading-tight">
-        Voice of Visitor
+        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-surface mb-6 max-w-2xl leading-tight">
+        Experiences at JNI
       </h2>
 
       <!-- Carousel Area -->

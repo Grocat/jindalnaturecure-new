@@ -2927,16 +2927,49 @@
     /*       MOBILE STYLES     */
     /* ======================= */
     @media screen and (max-width: 768px) {
+      /* ── Hero Video Banner ── */
+      .video-banner {
+        height: 80vh;
+        min-height: 400px;
+      }
+      .video-banner__content {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 36px 20px 60px;
+        gap: 24px;
+      }
+      .video-banner__header {
+        font-size: clamp(1.8rem, 8vw, 2.8rem) !important;
+        line-height: 1.15;
+      }
+      .video-banner__subtext {
+        font-size: 0.85rem !important;
+        letter-spacing: 0.1em;
+      }
+      .video-banner__headline {
+        text-align: left;
+        font-size: clamp(2rem, 10vw, 3.5rem);
+      }
+
+      /* ── Testimonial Section ── */
       .testimonial-section.min-h-800 {
         min-height: auto;
         padding: 60px 0;
       }
-
-      .New_quote_section p {
-        font-size: 20px !important;
-        padding: 0 10px;
+      .glass-card {
+        padding: 1.5rem !important;
+        border-radius: 1.5rem !important;
       }
 
+      /* ── Quote Section ── */
+      .New_quote_section p {
+        font-size: 18px !important;
+        padding: 0 16px;
+        line-height: 1.5;
+      }
+
+      /* ── Benefits / Feature List ── */
       .benefits-container {
         padding: 16px 0;
       }
@@ -3002,29 +3035,96 @@
         width: 100%;
       }
 
+      /* ── Bento Grid ── */
+      .bento-grid {
+        grid-template-columns: 1fr;
+      }
+      .card-large,
+      .card-medium {
+        grid-column: span 1 !important;
+      }
+      .card-large {
+        flex-direction: column;
+      }
+      .card-image-box {
+        width: 100%;
+        height: 220px;
+        aspect-ratio: unset;
+      }
+
+      /* ── CTA section gradient + layout ── */
       .cta-gradient {
         background: linear-gradient(to bottom, rgba(251, 251, 226, 0.98) 0%, rgba(251, 251, 226, 0.9) 60%, rgba(251, 251, 226, 0.4) 100%);
       }
 
+      /* ── Campus Grid (About section) ── */
+      .campus-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
       .campus-content,
       .map-column {
         grid-column: span 1 !important;
       }
+      .campus-section {
+        padding: 3rem 0;
+      }
 
+      /* ── Green Campus visual grid ── */
+      .visual-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 1rem;
+      }
+      .visual-large {
+        grid-row: span 1;
+        height: 280px;
+        border-radius: 2rem;
+      }
+      .visual-box,
+      .visual-small {
+        height: 220px;
+      }
+      .floating-card {
+        position: static;
+        margin-top: 1.5rem;
+        max-width: 100%;
+        padding: 1.5rem;
+      }
+
+      /* ── Experience section ── */
+      .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .experience-content,
+      .experience-visual {
+        grid-column: span 1 !important;
+      }
+      .exp-title {
+        font-size: 1.6rem;
+      }
+      .feature-list {
+        gap: 2rem;
+      }
+
+      /* ── Typography ── */
+      h2 {
+        font-size: 1.75rem !important;
+        line-height: 1.2 !important;
+      }
       html {
         font-size: 15px;
       }
-
       body {
         line-height: 1.55;
       }
-
-
-      .section-title {
-        font-size: 1.75rem;
+      .section-title,
+      .testimonial-section h2,
+      .text-headline-lg-mobile {
+        font-size: 1.75rem !important;
         line-height: 1.2;
       }
-
       .campus-description,
       .card-desc,
       .feature-desc,
@@ -3033,52 +3133,51 @@
       .cta-header-label {
         font-size: 0.95rem;
       }
-
       .metric-value {
         font-size: 2rem;
       }
-
       .metric-name {
         font-size: 0.75rem;
         letter-spacing: 0.18em;
       }
-
       .feature-title,
       .visual-box-title {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
       }
 
+      /* ── Feature items ── */
       .feature-item {
         gap: 1rem;
         padding: 1rem;
       }
 
+      /* ── Grid gaps ── */
       .map-card,
-      .campus-grid,
       .features-grid,
-      .experience-grid,
       .bento-grid {
-        gap: 1.5rem;
+        gap: 1.25rem;
       }
 
+      /* ── Footer ── */
       .footer {
         padding: 60px 0 40px;
       }
+      .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem;
+      }
 
-      /* CTA section mobile overrides */
+      /* ── CTA section full mobile overrides ── */
       .cta-section {
         padding: 80px 0 60px;
       }
-
       .cta-content {
         grid-template-columns: 1fr;
         gap: 2.5rem;
       }
-
       .cta-text-box {
         grid-column: span 1;
       }
-
       .cta-actions {
         grid-column: span 1;
         flex-direction: column;
@@ -3086,28 +3185,26 @@
         justify-content: flex-start;
         align-items: stretch;
       }
-
       .cta-text-box h2 {
         font-size: 2rem !important;
         margin-bottom: 1.5rem !important;
       }
-
       .cta-text-box p {
         font-size: 1rem !important;
         margin-bottom: 1.5rem !important;
       }
-
       .cta-actions .btn {
         width: 100%;
       }
 
-      .campus-grid {
-        gap: 2rem;
+      /* ── Marker / species card ── */
+      .marker-detail {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
       }
-
-      .campus-content,
-      .map-column {
-        grid-column: span 1;
+      .species-count {
+        text-align: left;
       }
     }
 
@@ -3144,43 +3241,31 @@
       }
     }
 
+    /* Extra-small phones (≤ 480px) */
     @media screen and (max-width: 480px) {
-
-
-      .experience-grid {
-        display: block;
-        grid-template-columns: 1fr;
-        gap: 0rem;
-
-      }
-
-      .map-column {
-        grid-column: auto;
-        position: relative;
-      }
-
       html {
         font-size: 14px;
       }
 
-      .section-title {
-        font-size: 1.75rem;
+      .video-banner__header {
+        font-size: 1.6rem !important;
       }
 
-      .campus-description,
-      .card-desc,
-      .feature-desc,
-      .metric-description {
-        font-size: 1rem;
+      .video-banner__content {
+        padding: 24px 16px 48px;
+      }
+
+      .campus-hero-image {
+        min-height: 220px;
       }
 
       .btn {
-        font-size: 0.75rem;
-        padding: 0.85rem 1rem;
+        font-size: 0.72rem;
+        padding: 0.75rem 1rem;
       }
 
       .metric-card {
-        padding: 2rem 1.5rem;
+        padding: 1.75rem 1rem;
       }
 
       .metric-value {
@@ -3191,9 +3276,8 @@
         gap: 0.75rem;
       }
 
-      /* Extra small screens: CTA section */
       .cta-text-box h2 {
-        font-size: 1.75rem !important;
+        font-size: 1.5rem !important;
       }
 
       .cta-text-box p {
@@ -3201,15 +3285,22 @@
       }
 
       .cta-section {
-        padding: 60px 0 40px;
+        padding: 48px 0 32px;
+      }
+
+      .map-column {
+        grid-column: auto;
+        position: relative;
       }
 
       .campus-grid {
-        gap: 1rem;
+        gap: 1.5rem;
       }
 
-
-
+      .glass-card {
+        padding: 1rem !important;
+        border-radius: 1rem !important;
+      }
     }
   </style>
 
@@ -4180,6 +4271,16 @@
 
       .metric-card {
         padding: 2.25rem 1.25rem;
+        border-right: 1px solid #c3c8c1;
+        border-bottom: 1px solid #c3c8c1;
+      }
+
+      .metric-card:nth-child(even) {
+        border-right: none;
+      }
+
+      .metric-card:nth-last-child(-n+2) {
+        border-bottom: none;
       }
     }
 
